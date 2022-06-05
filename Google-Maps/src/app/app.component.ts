@@ -25,19 +25,17 @@ export class AppComponent {
     this.label = "Scuola";
 
     this.circleOptions = {fillColor : 'red'}
+
     let iconData : google.maps.Icon = {
       url:'./assets/img/cat_acrobat.ico',
       scaledSize : new google.maps.Size(60,60)
     }
-     this.markerOptions = {icon:iconData}
+    this.markerOptions = {icon:iconData}
      
-     this.vertices = [
+    this.vertices = [
       {  lat: this.center.lat + 0.001, lng: this.center.lng - 0.002 },
       {  lat: this.center.lat, lng: this.center.lng },
       {  lat: this.center.lat - 0.001, lng: this.center.lng - 0.002},
- ];
-
-
+    ];
   }
 }
-
